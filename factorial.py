@@ -12,7 +12,9 @@
 def main():
  num = int(input("Enter a number: "))
  fact = 1
- if(num>0):
+ if(num<0):
+    print "Sorry could not caculate factorial for negative numbers"
+ elif(num>0):
     for i in range(1,num + 1):
        fact = fact*i
     print"The factorial of",num,"is",fact
